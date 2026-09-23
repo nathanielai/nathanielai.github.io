@@ -1,3 +1,5 @@
+import PatternGame from "./pattern-game";
+
 const skills = [
   {
     number: "01",
@@ -63,13 +65,14 @@ export default function Home() {
         Skip to content
       </a>
       <header className="header">
-        <a className="wordmark" href="#" aria-label="Nathaniel home">
-          nathaniel<span>.</span>
+        <a className="wordmark" href="#" aria-label="Nathaniel Blaiklock home">
+          Nathaniel Blaiklock<span>.</span>
         </a>
         <nav aria-label="Main navigation">
           <a href="#work">Work</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
+          <a href="#playground">Playground</a>
         </nav>
         <a className="nav-contact" href="#contact">
           Let’s talk <Arrow />
@@ -81,6 +84,7 @@ export default function Home() {
             <div className="eyebrow">
               <span className="status-dot" /> AI ENGINEER & FULL STACK DEVELOPER
             </div>
+            <p className="hero-name">Nathaniel Blaiklock</p>
             <h1 id="hero-title">
               Intelligent systems.
               <br />
@@ -89,14 +93,23 @@ export default function Home() {
               <span>Built to work.</span>
             </h1>
             <p className="hero-description">
-              I’m Nathaniel Blaiklock. I bring AI and software engineering
-              together to turn complex problems into reliable, human-centered
-              products.
+              I help businesses turn complex ideas into reliable AI products and
+              web applications. From the first prototype to production, I
+              connect thoughtful design with dependable engineering.
             </p>
             <div className="hero-actions">
-              <a className="button primary" href="#work">
+              <a className="button primary" href="#contact">
+                Discuss your project <Arrow />
+              </a>
+              <a className="text-link" href="#work">
                 Explore my work <Arrow />
               </a>
+            </div>
+            <div className="hero-proof">
+              <span>9+ years of experience</span>
+              <span>AI · Web · Cloud</span>
+            </div>
+            <div className="resume-link">
               <a
                 className="text-link"
                 href="/Nathaniel_Blaiklock_Resume.pdf"
@@ -294,6 +307,7 @@ export default function Home() {
             </article>
           </div>
         </section>
+        <PatternGame />
         <section id="contact" className="contact-section wrap">
           <div className="contact-box">
             <div className="eyebrow">
@@ -305,8 +319,8 @@ export default function Home() {
               in mind? <span>Let’s build it.</span>
             </h2>
             <p>
-              For AI products, full stack challenges, or a good conversation
-              about what’s next.
+              Tell me what you’re building, the challenge you’re facing, and
+              where you want to go. Let’s find a practical path forward.
             </p>
             <a className="contact-email" href="mailto:nblaiklock@gmail.com">
               nblaiklock@gmail.com <Arrow />
@@ -339,7 +353,7 @@ export default function Home() {
       </main>
       <footer className="wrap">
         <a className="wordmark" href="#">
-          nathaniel<span>.</span>
+          Nathaniel Blaiklock<span>.</span>
         </a>
         <span>© {new Date().getFullYear()} Nathaniel Blaiklock</span>
         <a href="#">Back to top ↑</a>
